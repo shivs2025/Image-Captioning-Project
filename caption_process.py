@@ -92,6 +92,8 @@ for key,captions in mapping.items():
 
 # store captions for future use in the pipeline
 pickle.dump(embedded_mapping,open('./processed_captions.pkl','wb'))
+pickle.dump(mapping,open('mappings.pkl','wb'))
+pickle.dump(t,open('tokenizer.pkl','wb'))
 
 # store values for future use in the pipeline
 caption_prop = {}
@@ -99,5 +101,5 @@ caption_prop['vocab size'] = vocab_size
 caption_prop['max length'] = maxlen
 pickle.dump(caption_prop,open('./captions_properties.pkl','wb'))
 
-print('Captions processing complete. Check for pickle files processed_captions, captions_properties.')
+print('Captions processing complete. Check for pickle files processed_captions, captions_properties, mapping, tokenizer.')
 
