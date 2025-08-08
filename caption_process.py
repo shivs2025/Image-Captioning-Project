@@ -35,7 +35,7 @@ def clean_text(mapping):
     return
 
 # load captions
-with open('./captions.txt','r') as f:
+with open('Image-Captioning-project\captions.txt','r') as f:
     next(f)
     captions_doc = f.read()
 print('Captions.txt loaded successfully..')
