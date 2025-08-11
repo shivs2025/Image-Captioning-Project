@@ -25,7 +25,7 @@ t = pickle.load(open('tokenizer.pkl','rb'))
 vocab_size = len(t.word_index) + 1
 maxlen = 34
 
-model = load_model("Image-Captioning-project/flask/model_13.keras")
+model = load_model("./model_13.keras")
 
 def idx_to_word(integer, tokenizer):
     for word, index in tokenizer.word_index.items():

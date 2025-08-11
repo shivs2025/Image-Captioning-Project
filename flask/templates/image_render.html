@@ -96,7 +96,10 @@
 
         {% if img %}
         <div class="result">
+			<!--
             <img src="{{ url_for('static', filename=img.split('static/')[-1]) }}" alt="Uploaded Image">
+			-->
+			<img src={{img}} alt="Uploaded Image">
             <p class="caption">📌 {{ cap }}</p>
         </div>
         {% endif %}
